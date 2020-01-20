@@ -34,7 +34,7 @@ As a result the following flow occurs:
 - The `inputter` uses the `processor` to get a list of the ordered, filtered customers. Additionally, the inputter uses the `logger` to output the customers to an output file.
 - The `processor` uses the `CustomerListJSONParser` to collect a list of all the Customers in the input file. 
 - The `CustomerListJSONParser` uses the `Customer` class to store the information from the input file. 
-- The `Customer` uses the `Distance` class to determine its own distance from the Intercom office!
+- The `Customer` uses the `Distance` class to determine its own distance from the Intercom office using the Great-circle distance found [here](https://en.wikipedia.org/wiki/Great-circle_distance)!
 
 ## Extensions
 This project can be extended in the following ways:
