@@ -8,6 +8,12 @@
 - Run `gradle fatJar`
 - Run `java -jar build/libs/intercom-test-all-1.0-SNAPSHOT.jar [input] [output]`
 
+To run tests:
+- `gradle tests`
+
+To run an individual test: 
+- `gradle test --tests [path to test file]`. For example: `gradle test --tests data.CustomerTest`
+
 To see existing sample output, look at `output.txt`.
 
 ## Dependencies
@@ -43,7 +49,6 @@ This project can be extended in the following ways:
 - Add additional distance metrics in the `Distance` class
 - Add additional fields to `Customer` class to keep track of more information
 - Add additional logging information in the `logger` class
-
 
 
 Thanks for reading!
