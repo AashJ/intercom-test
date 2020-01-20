@@ -9,9 +9,27 @@ repositories {
     mavenCentral()
 }
 
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Intercom-Test': 'JAR',
+                'Intercom': version,
+                'Main-Class': 'intercom.Main'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+//Get dependencies from Maven central repository
+repositories {
+    mavenCentral()
+}
+
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     // https://mvnrepository.com/artifact/com.google.code.gson/gson
     compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
 
 }
+
