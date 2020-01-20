@@ -40,6 +40,7 @@ This project can be extended in the following ways:
 - Log more information when outputting files
 
 --
+
 Thanks for reading!
 
 
