@@ -15,6 +15,11 @@ public class CustomerListJSONParser {
         this.inputFile = inputFile;
     }
 
+    /**
+     * Uses GSON to parse customer json files.
+     * @return A list of the parsed customers
+     * @throws IOException
+     */
     public List<Customer> parseCustomerJSONInput() throws IOException {
         List<Customer> ret = new ArrayList<>();
         Gson gson = new Gson();

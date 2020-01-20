@@ -15,6 +15,10 @@ public class Inputter {
         p = new Processor(inputFile);
     }
 
+    /**
+     * Logs each filtered, ordered customer received from the processor.
+     * @throws IOException
+     */
     public void outputAnswer() throws IOException {
         List<Customer> customers = p.getOrderedCustomers(Main.DISTANCE_FILTER_KM);
         Logger l = Logger.getInstance();

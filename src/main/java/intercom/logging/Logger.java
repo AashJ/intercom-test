@@ -8,6 +8,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ * Singleton class built for logging functionality.
+ */
 public class Logger {
     private Logger() {
     }

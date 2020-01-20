@@ -14,6 +14,13 @@ public class Processor {
         this.inputFile = inputFile;
     }
 
+    /**
+     * Gets all customers from the CustomerListJSONParser then filters using java8 streams.
+     *
+     * @param distanceFilter The distance at which to filter customers
+     * @return A list of ordered, fitlered customers.
+     * @throws IOException
+     */
     public List<Customer> getOrderedCustomers(double distanceFilter) throws IOException {
         CustomerListJSONParser clip = new CustomerListJSONParser(this.inputFile);
         List<Customer> allCustomers = clip.parseCustomerJSONInput();
