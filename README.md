@@ -39,7 +39,7 @@ This project can be extended in the following ways:
 - Add additional fields to Customer class to keep track of more information
 - Log more information when outputting files
 
---
+
 
 Thanks for reading!
 
