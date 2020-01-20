@@ -10,7 +10,7 @@
 
 To see existing sample output, look at `output.txt`.
 
-# Dependencies
+## Dependencies
 The only dependency used in this project is Gson: a reputable java library to parse json files. 
 
 ## Packages
